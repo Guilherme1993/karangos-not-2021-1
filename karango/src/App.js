@@ -29,7 +29,7 @@ import yellow from '@material-ui/core/colors/yellow';
 import pink from '@material-ui/core/colors/pink';
 import { Box } from '@material-ui/core';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import KarangosList from './routed/KarangosList';
+import KarangosList from './routed/KarangosList2';
 import KarangosForm from './routed/KarangosForm';
 
 const theme = createMuiTheme({
