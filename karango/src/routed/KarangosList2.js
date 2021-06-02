@@ -162,7 +162,7 @@ export default function KarangosList() {
       headerAlign: 'center', 
       flex: true,
       renderCell: params => (
-        <IconButton aria-label="editar">
+        <IconButton aria-label="editar" onClick={() => history.push(`/edit/${params.id}`)}>
           <EditIcon />
         </IconButton>
       )
