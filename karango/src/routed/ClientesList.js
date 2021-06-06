@@ -109,34 +109,6 @@ export default function ClientesList() {
             flex: true
         },
         {
-            field: 'rg',
-            headerName: 'RG',
-            align: 'center',
-            headerAlign: 'center',
-            flex: true
-        },
-        {
-            field: 'logradouro',
-            headerName: 'Logradouro',
-            align: 'center',
-            headerAlign: 'center',
-            flex: true,
-        },
-        {
-            field: 'num_imovel',
-            headerName: 'Nº Imóvel',
-            align: 'center',
-            headerAlign: 'center',
-            flex: true
-        },
-        {
-            field: 'complemento',
-            headerName: 'Complemento',
-            align: 'center',
-            headerAlign: 'center',
-            flex: true
-        },
-        {
             field: 'bairro',
             headerName: 'Bairro',
             align: 'center',
@@ -212,7 +184,7 @@ export default function ClientesList() {
             <h1>Listagem de Clientes</h1>
             <Toolbar className={classes.toolbar}>
                 <Button color="secondary" variant="contained" size="large"
-                    startIcon={<AddBoxIcon />} onClick={() => history.push('/new')}>
+                    startIcon={<AddBoxIcon />} onClick={() => history.push('/new-client')}>
                     Novo Cliente
         </Button>
             </Toolbar>
