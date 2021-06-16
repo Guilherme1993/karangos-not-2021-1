@@ -69,7 +69,7 @@ function Main() {
         <TopBar />
         <Box id="routed" className={classes.routed}>
           <Switch>
-          <Route path="/">
+            <Route path="/" exact="true">
               <HomePage />
             </Route>
             <Route path="/list">

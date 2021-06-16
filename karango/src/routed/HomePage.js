@@ -53,7 +53,7 @@ export default function HomePage() {
 
     const [visible, setVisible] = useState(false)
 
-    function changeVisibility(){
+    function changeVisibility() {
         setVisible(!visible)
     }
 
@@ -64,9 +64,13 @@ export default function HomePage() {
             <p>Seu objetivo é demonstrar as funcionalidades e possibilidades do React em conjunto com a biblioteca de componentes Material UI, acessando uma API REST remota.</p>
             <p>Clique sobre ícone do menu no canto superior esquerdo para acessar as funcionalidades.</p>
             <p className={classes.paragBotao}>
-            <Button variant="contained" color="secondary" onClick={changeVisibility}>Surpresa!</Button>
+                <Button variant="contained"
+                color="secondary"
+                onClick={changeVisibility}>Surpresa!</Button>
             </p>
-            <img src={vintage}  className={classes.figura} alt="Carros antigos" style={{opacity: visible ? '1' : '0', height: visible ? '591px': '0'}} />
+            <img src={vintage} className={classes.figura}
+            alt="Carros antigos"
+            style={{ opacity: visible ? '1' : '0', height: visible ? '591px' : '0' }} />
         </>
     )
 }
